@@ -35,7 +35,7 @@ public class Main {
 
         driver.findElement(By.name("email")).sendKeys("monika.gedam@american-technology.net");
         driver.findElement(By.name("password")).sendKeys("Test@123");
-        driver.findElement(By.xpath("//*[@id=\"officeApp\"]/div[1]/div[2]/div[2]/form/button")).click();
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
 
         driver.findElement(By.name("arrowDownOutline")).click();
         driver.findElement(By.xpath("//button[@data-testid='user-menu-profile']")).click();
